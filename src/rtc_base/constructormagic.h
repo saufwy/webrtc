@@ -8,5 +8,9 @@
     TypeName(const TypeName&) = delete;        \
     RTC_DISALLOW_ASSIGN(TypeName)
 
+#define RTC_DISALLOW_IMPLICIT_CONSTRUCTORS(TypeName) \
+    TypeName() = delete;                             \
+    RTC_DISALLOW_COPY_AND_ASSIGN(TypeName)
+
 #endif
 
